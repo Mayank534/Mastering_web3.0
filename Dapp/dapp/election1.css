@@ -1,0 +1,137 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+ 
+  }
+  
+  h1 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #1abc9c;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1f5f52;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .candidates-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .candidate {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .candidate-img {
+    border-radius: 50%;
+    border: 2px solid #1abc9c;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .candidate-img-small {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .candidate-img-medium {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .candidate-img-large {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .candidate-img-xlarge {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .candidate-img:hover {
+    transform: scale(1.1);
+  }
+  
+  p {
+    margin-top: 5px;
+    font-weight: bold;
+    color: white; /* Set the text color to white */
+  }
+  
+  .input-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the input boxes */
+  }
+  
+label {
+  color: white;
+  margin-bottom: 5px;
+}
+  
+  .logo {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 120px;
+    height: 120px;
+  }
+  button {
+    margin-top: 30px;
+    padding-top: 30px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  /* ... (existing CSS styles) ... */
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: center;
+  color: white;
+}
+
+th {
+  background-color: #1f5f52;
+}
+
+/* ... (rest of the CSS styles) ... */

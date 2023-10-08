@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Election</title>
+  <link rel="stylesheet" href="election1.css">
+</head>
+<body>
+  <img src="logo.png" alt="Logo" class="logo">
+  <h1>Candidates for PSG(President Student Gymkhana)</h1>
+  
+  <div class="candidates-list">
+    <div class="candidate">
+      <img src="candidate1.jpeg" alt="Candidate 1" class="candidate-img candidate-img-xlarge">
+      <p>Candidate 1</p>
+    </div>
+    <div class="candidate">
+      <img src="candidate2.jpeg" alt="Candidate 2" class="candidate-img candidate-img-xlarge">
+      <p>Candidate 2</p>
+    </div>
+    <div class="candidate">
+      <img src="candidate3.jpeg" alt="Candidate 3" class="candidate-img candidate-img-xlarge">
+      <p>Candidate 3</p>
+    </div>
+    <div class="candidate">
+      <img src="candidate4.jpg" alt="Candidate 4" class="candidate-img candidate-img-xlarge">
+      <p>Candidate 4</p>
+    </div>
+  </div>
+  <h2>Enter Indexes of Three Candidates in order:</h2>
+  <div class="input-containers">
+    <label for="index1" style="color: white;">Candidate 1:</label>
+    <input type="number" id="index1" name="index1" min="1" max="4" required>
+
+    <label for="index2" style="color: white;">Candidate 2:</label>
+    <input type="number" id="index2" name="index2" min="1" max="4" required>
+
+    <label for="index3" style="color: white;">Candidate 3:</label>
+    <input type="number" id="index3" name="index3" min="1" max="4" required>
+  </div>
+  <button id="registerButton">Register with MetaMask to vote</button>
+  <h2>Standings by Number of Votes</h2>
+  <table id="standingsTable">
+    <tr style="color: white;">
+      <th>Candidate Name</th>
+      <th>Number of Votes</th>
+    </tr>
+  </table>
+
+  <!-- Load the script.js file -->
+  
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
