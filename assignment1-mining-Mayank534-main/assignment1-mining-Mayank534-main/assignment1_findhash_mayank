@@ -1,0 +1,44 @@
+import hashlib
+import time
+
+# Target value
+target = 0x0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+# Get input data
+input_data = input("Enter a string: ")
+
+# Start timer
+start_time = time.time()
+
+# i value
+i = 0
+
+# Loop until target is reached
+while True:
+    input_data1=input_data
+    # Append i to input data
+    data_with_nonce = input_data1 + str(i)
+    
+    # Hash the data
+    sha256_hash = hashlib.sha256(data_with_nonce.encode()).hexdigest()
+    
+    # Convert hash to integer
+    hash_int = int(sha256_hash, 16)
+    #print(hash_int)
+    #print(target)
+
+    # Check if hash is less than target
+    if hash_int < target:
+        # Print i and hash value
+        print("Number Added::", i)
+        print("Hash:", sha256_hash)
+        break
+        
+    # Increment nonce
+    i += 1
+
+# Stop timer
+end_time = time.time()
+
+# Print time taken
+print("Total Time taken:", end_time - start_time, "seconds")
